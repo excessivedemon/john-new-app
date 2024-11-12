@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: john-new-app API
+  description: API documentation for john-new-app.
+  version: 1.0.0
+paths:
+  /:
+    get:
+      summary: Get root endpoint
+      description: Returns a simple response for the root endpoint.
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Hello World"
